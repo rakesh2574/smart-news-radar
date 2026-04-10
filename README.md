@@ -2,9 +2,13 @@
 
 A lightweight Chrome Extension that fetches the latest news on any topic, with an optional AI-powered analysis layer.
 
-![Smart News Radar preview](screenshot-placeholder.png)
+## 🎬 Demo
 
-> _Screenshot / GIF placeholder — add a real capture of the popup here._
+Watch the extension in action on YouTube:
+
+[![Smart News Radar — Demo](https://img.youtube.com/vi/VXcxDXGblXk/maxresdefault.jpg)](https://www.youtube.com/watch?v=VXcxDXGblXk)
+
+▶️ **[Watch the full demo on YouTube](https://www.youtube.com/watch?v=VXcxDXGblXk)**
 
 ---
 
@@ -67,7 +71,7 @@ Both keys are stored **only on your device** via `chrome.storage.local` and are 
 - Chrome Extension **Manifest V3**
 - Vanilla **HTML / CSS / JavaScript** — no frameworks, no build tools, no npm
 - **GNews.io** REST API for headlines
-- **Google Gemini Flash** (`gemini-1.5-flash-latest`) for optional analysis
+- **Google Gemini Flash** (`gemini-2.0-flash` with automatic fallback to older models) for optional analysis
 - `chrome.storage.local` for persisting keys, saved topics, and UI state
 
 ---

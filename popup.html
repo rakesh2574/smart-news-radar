@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Smart News Radar</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="app">
+      <!-- Header -->
+      <header class="header">
+        <div class="brand">
+          <span class="logo">📡</span>
+          <h1>Smart News Radar</h1>
+        </div>
+        <div class="header-actions">
+          <label class="toggle" title="Toggle AI Analysis">
+            <input type="checkbox" id="aiToggle" />
+            <span class="slider"></span>
+            <span class="toggle-label">AI</span>
+          </label>
+          <button
+            id="settingsBtn"
+            class="icon-btn"
+            title="Settings"
+            aria-label="Settings"
+          >
+            ⚙️
+          </button>
+        </div>
+      </header>
+
+      <!-- Search bar -->
+      <div class="search-row">
+        <input
+          type="text"
+          id="searchInput"
+          class="search-input"
+          placeholder="Search any topic… e.g. AI agents, NIFTY 50"
+          autocomplete="off"
+        />
+        <button id="searchBtn" class="primary-btn" title="Search">
+          Search
+        </button>
+        <button
+          id="refreshBtn"
+          class="icon-btn"
+          title="Refresh current topic"
+          aria-label="Refresh"
+        >
+          ↻
+        </button>
+      </div>
+
+      <!-- Saved topic chips -->
+      <div class="chips-row">
+        <div id="chipsContainer" class="chips-container"></div>
+        <button id="saveTopicBtn" class="chip chip-add" title="Save current topic">
+          + Save Topic
+        </button>
+      </div>
+
+      <!-- Results area -->
+      <main id="results" class="results">
+        <div class="empty-state">
+          <p>Enter a topic above to see the latest news.</p>
+        </div>
+      </main>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>
